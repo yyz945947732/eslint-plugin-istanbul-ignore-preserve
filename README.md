@@ -1,6 +1,6 @@
 # eslint-plugin-istanbul-ignore-preserve
 
-If your project source codes are transpiled using [esbuild](https://esbuild.github.io/), which strips all comments from the source codes ([esbuild#516](https://github.com/evanw/esbuild/issues/516)).
+If your project source codes are transpiled using [esbuild](https://esbuild.github.io/), which strips all comments from the source codes ([esbuild#516](https://github.com/evanw/esbuild/issues/516)). So the following ignore hint will not work.
 
 ```js
 /* istanbul ignore if */
