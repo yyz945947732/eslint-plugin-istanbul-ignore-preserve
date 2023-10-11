@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-istanbul-ignore-preserve",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make sure istanbul include a @preserve keyword in the ignore hint.",
   "keywords": [
     "eslint",
