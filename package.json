@@ -5,7 +5,11 @@
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "istanbul",
+    "istanbul-coverage",
+    "esbuild",
+    "coverage"
   ],
   "author": "yyz945947732 <945947732@qq.com>",
   "main": "./lib/index.js",
