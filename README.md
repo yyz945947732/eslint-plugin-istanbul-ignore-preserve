@@ -1,13 +1,13 @@
 # eslint-plugin-istanbul-ignore-preserve
 
-If your project source codes are transpiled using esbuild, which strips all comments from the source codes ([esbuild#516](https://github.com/evanw/esbuild/issues/516)). Comments which are considered as legal comments are preserved.
+If your project source codes are transpiled using [esbuild](https://esbuild.github.io/), which strips all comments from the source codes ([esbuild#516](https://github.com/evanw/esbuild/issues/516)). Comments which are considered as legal comments are preserved.
 
 ```js
 /* istanbul ignore if */
 if (condition) {
 ```
 
-For istanbul coverage you need include a `@preserve` keyword in the ignore hint to make istanbul test coverage work.
+For istanbul coverage you need include a `@preserve` keyword in the ignore hint to make ignore hint work.
 
 ```js
 /* istanbul ignore if -- @preserve */
