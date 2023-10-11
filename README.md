@@ -1,5 +1,7 @@
 # eslint-plugin-istanbul-ignore-preserve
 
+ESLint plugin to make sure ignore hint include a `@preserve` keyword. This is useful when project using istanbul with esbuild.
+
 If your project source codes are transpiled using [esbuild](https://esbuild.github.io/), which strips all comments from the source codes ([esbuild#516](https://github.com/evanw/esbuild/issues/516)). So the following ignore hint will not work.
 
 ```js
