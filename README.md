@@ -34,7 +34,15 @@ npm install eslint-plugin-istanbul-ignore-preserve --save-dev
 
 ## Usage
 
-Add `eslint-istanbul-ignore-preserve` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+On your `.eslintrc.json` file extend the plugin's recommended configuration:
+
+```json
+{
+  "extends": ["plugin:istanbul-ignore-preserve/recommended"]
+}
+```
+
+If you want to use your own configuration, you can do so by adding the plugin to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
@@ -55,8 +63,6 @@ Then configure the rules you want to use under the rules section.
 ```
 
 ## Rules
-
-<!-- begin auto-generated rules list -->
 
 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
