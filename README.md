@@ -1,6 +1,6 @@
 # eslint-plugin-istanbul-ignore-preserve
 
-ESLint plugin to make sure ignore hint include a `@preserve` keyword. This is useful when your project use istanbul and esbuild together.
+ESLint plugin to make sure ignore hint include a `@preserve` keyword. This is useful when your project is using istanbul and esbuild together.
 
 ## Why use
 
@@ -11,7 +11,7 @@ If your project source codes are transpiled using [esbuild](https://esbuild.gith
 if (condition) {
 ```
 
-For istanbul coverage you need include a `@preserve` keyword in the ignore hint to make it work. Comments which are considered as legal comments are preserved.
+For istanbul coverage you need include a `@preserve` keyword in the ignore hint to make this work. Comments which are considered as legal comments are preserved.
 
 ```js
 /* istanbul ignore if -- @preserve */
