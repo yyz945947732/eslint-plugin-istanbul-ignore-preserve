@@ -46,9 +46,7 @@ If you want to use your own configuration, you can do so by adding the plugin to
 
 ```json
 {
-    "plugins": [
-        "istanbul-ignore-preserve"
-    ]
+  "plugins": ["istanbul-ignore-preserve"]
 }
 ```
 
@@ -56,9 +54,9 @@ Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "istanbul-ignore-preserve/preserve-keyword": "warn"
-    }
+  "rules": {
+    "istanbul-ignore-preserve/preserve-keyword": "warn"
+  }
 }
 ```
 
@@ -66,6 +64,10 @@ Then configure the rules you want to use under the rules section.
 
 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
-| Name                                               | Description                                                 | 🔧    |
-| :------------------------------------------------- | :---------------------------------------------------------- | :--- |
-| [preserve-keyword](docs/rules/preserve-keyword.md) | Make sure istanbul ignore hint include a @preserve keyword. | 🔧    |
+| Name                                               | Description                                                 | 🔧  |
+| :------------------------------------------------- | :---------------------------------------------------------- | :-- |
+| [preserve-keyword](docs/rules/preserve-keyword.md) | Make sure istanbul ignore hint include a @preserve keyword. | 🔧  |
+
+## LICENSE
+
+[MIT](https://github.com/yyz945947732/eslint-plugin-istanbul-ignore-preserve/blob/master/LICENSE)
