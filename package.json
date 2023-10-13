@@ -8,7 +8,7 @@
     "eslint-plugin",
     "istanbul",
     "istanbul-coverage",
-    "esbuild",
+    "istanbul-ignore",
     "coverage"
   ],
   "author": "yyz945947732 <945947732@qq.com>",
