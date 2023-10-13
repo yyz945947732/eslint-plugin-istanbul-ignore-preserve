@@ -18,6 +18,12 @@ ruleTester.run("preserve-keyword", rule, {
     {
       code: "/* istanbul ignore file -- @preserve */",
     },
+    {
+      code: "// istanbul ignore file -- @preserve",
+    },
+    {
+      code: "/* istanbul ignore if: lazy to tests -- @preserve */",
+    },
   ],
   invalid: [
     {
@@ -39,6 +45,16 @@ ruleTester.run("preserve-keyword", rule, {
       code: "/* istanbul ignore file */",
       errors: [{ messageId: "noPreserveKeyword" }],
       output: "/* istanbul ignore file -- @preserve */",
+    },
+    {
+      code: "// istanbul ignore file",
+      errors: [{ messageId: "noPreserveKeyword" }],
+      output: "/* istanbul ignore file -- @preserve */",
+    },
+    {
+      code: "/* istanbul ignore if: lazy to tests */",
+      errors: [{ messageId: "noPreserveKeyword" }],
+      output: "/* istanbul ignore if: lazy to tests -- @preserve */",
     },
   ],
 });
